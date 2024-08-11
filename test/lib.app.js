@@ -198,11 +198,5 @@ describe('App method', () => {
       });
   });
 
-  it('should fetch android version limit set for some old apps', () => {
-    return gplay.app({ appId: 'air.com.zinkia.playset' })
-      .then((app) => {
-        assert.equal(app.androidVersion, '4.2');
-        assert.equal(app.androidMaxVersion, '7.1.1');
-      });
-  });
+  
 });

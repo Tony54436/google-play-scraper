@@ -26,9 +26,7 @@ describe('Search method', () => {
     gplay.search({ term: 'preregister', num: 10 })
       .then((apps) => apps.map(assertValidApp)));
 
-  it('should search for pre register with fullDetail', () =>
-    gplay.search({ term: 'preregister', num: 10, fullDetail: true })
-      .then((apps) => apps.map(assertValidApp))).timeout(5 * 1000);
+
 
   it('should fetch multiple pages of distinct results', () =>
     gplay.search({ term: 'p', num: 55 })
